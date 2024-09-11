@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# luuakse muutuja mille väärtuseks antakse 2016
+aasta="2016"
+# luukase muutjua mille väärtuseks on "Kersti kaljulaid"
+president="Kersti Kaljulaid"
+# luuakse muutjua mille väärtuseks on ". aastal valiti Eesti presidendiks"
+lause_keskosa=". aastal valiti Eesti presidendiks "
+# luukase muutuja kus liidetakse eelmised muutujad kokku
+lause="$aasta$lause_keskosa$president"
+# väjastatakse muutuja lause väärtus ekraanile
+echo $lause
