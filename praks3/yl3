@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo "Sisesta ainepunktide arv"
+
+read ainepunktide_arv
+
+echo "Sisesta nädalate arv"
+
+read nädalate_arv
+
+if ! [[ "$ainepunktide_arv" =~ ^[0-9]+$ ]] || ! [[ "$naalade_arv" =~ ^[0-9]+$ ]]; then
+    echo "Palun sisestage kehtivad täisarvud."
+    exit 1
+fi
+
+ajakulu=$(echo "scale=2; ($ainepunktide_arv * 26) / $naalade_arv" | bc)
+
+eeldatav_ajakulu=$(echo "($ajakulu + 0.9)/1" | bc)
+
+echo "Ühe nädala eeldatav ajakulu: $eeldatav_ajakulu tundi"
