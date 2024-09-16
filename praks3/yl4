@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "Sisesta reisijate arv: "
+
+read reisijad
+
+echo "Sisesta bussikohtade arv: "
+
+read bussikohad
+
+bussid=$((reisijad / bussikohad))
+
+mahajaanud=$((reisijad % bussikohad))
+
+echo "Busse täidetud: $bussid"
+
+echo "Maha jäetud: $mahajaanud"
