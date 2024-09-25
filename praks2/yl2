@@ -1,5 +1,5 @@
 #!/bin/bash
-date +"%B %Y %D"
+date +"%B %Y %D" #võtab kuupäeva
 date +"Time is %H:%M"
 echo
 date +"Calender of %B %Y"

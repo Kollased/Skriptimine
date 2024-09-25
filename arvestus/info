@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Tere! $(whoami)"
+#kasutab "whoami" commandi et leida kasutaja nimi
+echo "täna on $(date "+%d.%m.%Y") kell $(date "+%H:%M")"
+#annab praeguse kellaja

@@ -1,0 +1,33 @@
+#! /bin/bash
+
+echo "
+1) liha ja kartulid
+2) kala ja krõpsud
+3) supp ja salat"
+
+echo "Tee oma valik (1 või 2 või 3)"
+
+read valik
+
+case $valik in
+
+1)
+	echo -n "Väga maitsev, aga jälgi oma tervist! 
+Head isu!
+"
+
+	;;
+
+2)
+	echo -n "Brititoit on maisev! 
+Head isu!
+"
+
+	;;
+
+3)
+	echo -n "Nii tervislik ja igav... 
+Head isu!
+"
+	;;
+esac
