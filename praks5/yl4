@@ -1,0 +1,15 @@
+#!/bin/bash
+
+user=$USER
+
+tund=$(date +"%T" | cut -d: -f1)
+
+if  [ $tund -ge 6 ] && [ $tund -lt 18 ]; then
+	echo "Tere hommikust $user!"
+elif [ $tund -ge 12 ] && [ $tund -lt 22 ]; then
+	echo "Tere päevast $user!"
+elif [ $tund -ge 22 ] || [ $tund -lt 6 ]; then
+	echo "Head ööd $user!"
+else
+	echo "Vigane sisend"
+fi
