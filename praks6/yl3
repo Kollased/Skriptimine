@@ -1,7 +1,6 @@
 #!/bin/bash
-# väljastab kuu nime
-
 echo -n "Mitmes kuu (1-12): "
+
 read kuu
 
 case $kuu in
