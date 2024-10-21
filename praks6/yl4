@@ -1,0 +1,23 @@
+#!/bin/bash
+
+function alg_arv() {
+    local arv=$1
+
+    if [ "$arv" -lt 2 ]; then
+        echo "$arv - ei ole algarv"
+        return
+    fi
+
+    for (( jaga=2; jaga*jaga<=arv; jaga++ )); do
+        if (( arv % jaga == 0 )); then
+            echo "$arv - ei ole algarv"
+            return
+        fi
+    done
+
+    echo "$arv - on algarv"
+}
+
+for (( arv=1; arv<=20; arv++ )); do
+    alg_arv "$arv"
+done
