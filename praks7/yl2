@@ -1,0 +1,14 @@
+#!/bin/bash
+read -p "Sisesta ridade arv: " read_ridade_arv
+
+read -p "Sisesta tärnide arv yhes reas: " read_tarnide_arv
+
+for (( i = 1; i <= read_ridade_arv; i++ ))
+do
+    echo -n "$i. "  # V2ljasta rea koos punktiga
+    for (( j = 1; j <= read_tarnide_arv; j++ ))
+    do
+        echo -n "* "
+    done
+    echo ""
+done
